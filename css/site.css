@@ -1,11 +1,26 @@
-main {
-  font-family: arial;
+body, html {
+  font-family: Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  position: relative;
 }
 
-h1 {
-  color: orange;
-  font-size: 300%;
-  margin-left: 10px;
+header {
+  background-image: url("../img/amsterdam.png");
+  background-color: pink;
+  height: 25%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title h1 {
+  color: red;
+  font-size: 3em;
+  margin: 8%;
+  position: absolute;
+  background-color: black;
+  padding: .25em;
 }
 
 p {
