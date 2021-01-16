@@ -1,0 +1,48 @@
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  background-color: #01044d;
+}
+
+header {
+  background-image: url("../img/paris.png");
+  background-color: pink;
+  height: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#title span {
+  color: #d5dbdd;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  background-color: black;
+  padding: .25em;
+  top: 10%;
+  left: 10%;
+}
+
+#content {
+  background-color: #aab0b9;
+  width: 90%;
+  min-height: 300px;
+  padding: 1em;
+  margin: 1em auto;
+  border: solid 1px #444444;
+  font-size: 20px;
+}
+
+#labs {
+  background-color: #aab0b9;
+  width: 90%;
+  min-height: 30px;
+  padding: 1em;
+  margin: 1em auto 1em auto;
+  border: solid 1px #444444;
+  font-size: 20px;
+}
