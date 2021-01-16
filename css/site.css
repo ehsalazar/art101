@@ -1,5 +1,5 @@
 body, html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   height: 100%;
   margin: 0;
   position: relative;
@@ -8,7 +8,7 @@ body, html {
 header {
   background-image: url("../img/amsterdam.png");
   background-color: pink;
-  height: 25%;
+  height: 30%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,10 +17,12 @@ header {
 #title h1 {
   color: red;
   font-size: 3em;
-  margin: 8%;
+  margin: 0;
   position: absolute;
   background-color: black;
   padding: .25em;
+  top: 10%;
+  left: 20%;
 }
 
 p {
