@@ -3,6 +3,7 @@ body, html {
   height: 100%;
   margin: 0;
   position: relative;
+  background-color: #82cce4;
 }
 
 header {
@@ -14,28 +15,36 @@ header {
   background-size: cover;
 }
 
-#title h1 {
-  color: red;
+#title span {
+  color: #de1c36;
   font-size: 3em;
+  font-weight: bold;
   margin: 0;
   position: absolute;
   background-color: black;
   padding: .25em;
   top: 10%;
-  left: 20%;
+  left: 10%;
 }
 
-p {
-  text-indent: 20px;
-  margin-left: 10px;
-}
+
 
 #content {
-  background-color: grey;
-  width: 60%;
+  background-color: #f2f1e6;
+  width: 90%;
   min-height: 300px;
-  padding: 30px;
-  margin: 30px;
+  padding: 1em;
+  margin: auto;
+  border: solid 1px #444444;
+  font-size: 20px;
+}
+
+#labs {
+  background-color: #f2f1e6;
+  width: 90%;
+  min-height: 30px;
+  padding: 1em;
+  margin: 1em auto 1em auto;
   border: solid 1px #444444;
   font-size: 20px;
 }
