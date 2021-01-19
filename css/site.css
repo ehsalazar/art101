@@ -4,6 +4,7 @@ body, html {
   margin: 0;
   position: relative;
   background-color: #82cce4;
+  text-transform: lowercase;
 }
 
 header {
@@ -30,19 +31,39 @@ header {
 #content {
   background-color: #f2f1e6;
   width: 90%;
-  min-height: 300px;
   padding: 1em;
-  margin: auto;
+  margin: 1em auto 1em auto;
   border: solid 1px #444444;
-  font-size: 20px;
+  font-size: 1.25em;
+  margin: 1em auto;
 }
 
 #labs {
   background-color: #f2f1e6;
   width: 90%;
-  min-height: 30px;
   padding: 1em;
   margin: 1em auto 1em auto;
   border: solid 1px #444444;
-  font-size: 20px;
+  font-size: 1.25em;
+}
+
+footer {
+  background-color: #f2f1e6;
+  width: 90%;
+  padding: 1.25em;
+  margin: 1em auto 1em auto;
+  border: solid 1px #444444;
+}
+
+footer ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em;
 }
