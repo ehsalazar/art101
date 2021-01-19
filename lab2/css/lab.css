@@ -10,11 +10,6 @@ header {
   color: #d5dbdd;
 }
 
-#content {
-  background-color: #aab0b9;
-  margin: 1em auto;
-}
-
-#labs {
+#content, #labs, footer {
   background-color: #aab0b9;
 }
