@@ -1,0 +1,28 @@
+body, html {
+  background-color: #00824d;
+}
+
+header {
+  background-image: url("../img/hamburg.png");
+}
+
+#title span {
+  color: #c0e7eb;
+}
+
+#content, #labs, footer {
+  background-color: #d9d1b9;
+}
+
+figure img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 80%;
+}
