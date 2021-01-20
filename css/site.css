@@ -1,58 +1,67 @@
 body, html {
   font-family: Arial, sans-serif;
-  height: 100%;
   margin: 0;
-  position: relative;
-  background-color: #82cce4;
+  background-color: #035682;
   text-transform: lowercase;
 }
 
 header {
   background-image: url("../img/amsterdam.png");
   background-color: pink;
-  height: 30%;
+  height: 15em;
+  width: 96%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 1.5em auto 1em auto;
+  border: solid 0.25em black;
+}
+
+#title {
+  height: 15em;
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 #title span {
-  color: #de1c36;
+  color: #d4000c;
   font-size: 3em;
   font-weight: bold;
   margin: 0;
-  position: absolute;
   background-color: black;
   padding: .25em;
-  top: 10%;
-  left: 10%;
 }
 
 #content {
-  background-color: #f2f1e6;
-  width: 90%;
+  background-color: #faeacd;
   padding: 1em;
-  margin: 1em auto 1em auto;
-  border: solid 1px #444444;
+  width: 93%;
+  border: solid 0.2em black;
   font-size: 1.25em;
   margin: 1em auto;
 }
 
 #labs {
-  background-color: #f2f1e6;
-  width: 90%;
+  background-color: #faeacd;
   padding: 1em;
-  margin: 1em auto 1em auto;
-  border: solid 1px #444444;
+  width: 93%;
+  margin: 1em auto;
   font-size: 1.25em;
+  border: solid 0.2em black;
+}
+
+#content h1,
+#labs h2 {
+  margin-top: 0;
 }
 
 footer {
-  background-color: #f2f1e6;
-  width: 90%;
+  background-color: #faeacd;
   padding: 1.25em;
-  margin: 1em auto 1em auto;
-  border: solid 1px #444444;
+  width: 93%;
+  margin: 1em auto;
+  border: solid 0.2em black;
 }
 
 footer ul {
@@ -65,5 +74,10 @@ footer ul {
 footer li {
   display: inline-block;
   font-size: 1em;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
+}
+
+#credit {
+  display: block;
+  padding-bottom: 1em;
 }
