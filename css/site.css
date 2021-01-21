@@ -69,15 +69,16 @@ footer ul {
   text-align: center;
   margin: 0;
   padding: 0;
+  padding-bottom: 1em;
 }
 
 footer li {
+  font-weight: bolder;
   display: inline-block;
   font-size: 1em;
   padding: 1em 1em 0 1em;
 }
 
-#credit {
+.footer_callouts {
   display: block;
-  padding-bottom: 1em;
 }
