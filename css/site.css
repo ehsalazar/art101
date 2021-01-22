@@ -5,6 +5,18 @@ body, html {
   text-transform: lowercase;
 }
 
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
 header {
   background-image: url("../img/amsterdam.png");
   background-color: pink;
@@ -42,7 +54,7 @@ header {
   margin: 1em auto;
 }
 
-#labs {
+nav {
   background-color: #faeacd;
   padding: 1em;
   width: 93%;
@@ -52,7 +64,7 @@ header {
 }
 
 #content h1,
-#labs h2 {
+nav h2 {
   margin-top: 0;
 }
 
