@@ -1,0 +1,22 @@
+body, html {
+  background-color: #1e1d27;
+}
+
+header {
+  background-image: url("../img/berlin.png");
+}
+
+#title span {
+  color: #e7ca4d;
+}
+
+#content, nav, footer {
+  background-color: #cfe1ee;
+}
+
+.output {
+  border: solid .1em black;
+  padding: 1em;
+  width: 30%;
+  margin-bottom: 1em;
+}
