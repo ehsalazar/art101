@@ -1,0 +1,26 @@
+body, html {
+  background-color: #1f262d;
+}
+
+header {
+  background-image: url("../img/sfsoma.png");
+}
+
+#title span {
+  color: #ffffff;
+}
+
+#content, nav, footer {
+  background-color: #e3eecf;
+}
+
+.output {
+  border: solid .1em black;
+  padding: 1em;
+  width: 40%;
+  margin-bottom: 1em;
+}
+
+code {
+  text-transform: none;
+}
