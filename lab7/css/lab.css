@@ -1,26 +1,53 @@
 body, html {
-  background-color: #1f262d;
+  background-color: #132138;
 }
 
 header {
-  background-image: url("../img/sfsoma.png");
+  background-image: url("../img/munich.png");
 }
 
 #title span {
-  color: #ffffff;
+  color: #f9c753;
 }
 
 #content, nav, footer {
-  background-color: #e3eecf;
+  background-color: #c7c1ad;
 }
 
 .output {
   border: solid .1em black;
   padding: 1em;
-  width: 40%;
+  width: 90%;
   margin-bottom: 1em;
 }
 
 code {
   text-transform: none;
+}
+
+.row {
+ display: flex;
+}
+
+.column {
+ flex: 50%;
+ padding: 5px;
+}
+
+#nametag {
+  height: 15em;
+  display: block;
+  margin-left: 5em;
+}
+.name {
+  text-transform: none;
+  position: absolute;
+  top: 15.7em;
+  right: 2.5em;
+  width: 5.7em;
+  word-wrap: break-word;
+  font-size: 300%;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.2em;
 }
