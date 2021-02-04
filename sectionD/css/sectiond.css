@@ -1,0 +1,25 @@
+body, html {
+  background-color: #933989;
+}
+
+header {
+  /* background-image: url("../img/sanfrancisco.png"); */
+}
+
+#title span {
+  color: #f9f558;
+}
+
+#content, nav, footer {
+  background-color: #bed0dc;
+}
+
+/* https://www.w3schools.com/tags/tag_iframe.asp
+https://www.w3schools.com/html/html_youtube.asp
+https://www.w3schools.com/html/html5_video.asp */
+iframe, img {
+  display: block;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
