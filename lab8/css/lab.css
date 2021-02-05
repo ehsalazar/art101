@@ -1,17 +1,17 @@
 body, html {
-  background-color: #132138;
+  background-color: #191a20;
 }
 
 header {
-  background-image: url("../img/munich.png");
+  background-image: url("../img/sf2014.png");
 }
 
 #title span {
-  color: #f9c753;
+  color: #fc7e36;
 }
 
 #content, nav, footer {
-  background-color: #c7c1ad;
+  background-color: #62fbed;
 }
 
 .output {
