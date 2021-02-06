@@ -17,7 +17,7 @@ header {
 .output {
   border: solid .1em black;
   padding: 1em;
-  width: 90%;
+  width: 45%;
   margin-bottom: 1em;
 }
 
@@ -25,28 +25,27 @@ code {
   text-transform: none;
 }
 
-.row {
- display: flex;
-}
-
-.column {
- flex: 50%;
- padding: 5px;
-}
 
 #nametag {
-  height: 15em;
+  width: 20em;
   display: block;
-  margin-left: 5em;
+  float: right;
+  margin: 0.5em;
 }
+
+#nametag img {
+    width: 100%;
+    height: auto;
+}
+
 .name {
   text-transform: none;
   position: absolute;
-  top: 15.7em;
-  right: 2.5em;
+  top: 8em;
+  right: 1.6em;
   width: 5.7em;
   word-wrap: break-word;
-  font-size: 300%;
+  font-size: 275%;
   font-weight: bold;
   text-align: center;
   margin: 0.2em;

@@ -35,7 +35,7 @@ const visitorNameManipulation = () => {
   var sortedName = sortName(visitorName);
   document.writeln(`Here are the sorted letters in your name : ${sortedName} </br></br>`);
   var shuffledName = shuffleName(visitorName);
-  document.writeln("Look! You now have a new, funnier name. ===> <br>");
+  document.writeln("Look! The name tag has your new, alphabet soup name.<br>");
   document.writeln(`<div class='name'>${shuffledName}</div>`)
 }
 
