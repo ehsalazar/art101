@@ -94,3 +94,7 @@ footer li {
 .footer_callouts {
   display: block;
 }
+
+code {
+  text-transform: none;
+}
