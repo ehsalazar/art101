@@ -7,20 +7,17 @@ header {
 }
 
 #title span {
-  color: #fc7e36;
+  color: #ffe64b;
 }
 
 #content, nav, footer {
   background-color: #62fbed;
 }
 
-.output {
+#output {
   border: solid .1em black;
   padding: 1em;
   width: 40%;
   margin-bottom: 1em;
-}
-
-code {
   text-transform: none;
 }

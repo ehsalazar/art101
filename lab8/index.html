@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title>lab 8: anon functions and callbacks</title>
-	<script type="text/javascript" src="js/lab.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<script type="text/javascript" src="js/lab.js" defer></script>
 </head>
 <body>
 	<header>
@@ -14,14 +14,15 @@
 	</header>
 	<main>
 		<div id="content">
-			<h3></h3>
+			<h3>The focus of this lab was to experiment with anonymous functions and callbacks.</h3>
 			<h1>Challenges</h1>
-			<p></p>
+			<p>This lab was fun. Getting everything to log to the console worked with little issue. Getting everything into my HTML was more challenging. I suspected that I could use something like <code>onload</code> to have the scripts output into the page rather than the console. Upon investigating, I found that <code>defer</code> might be a better choice, and was the one I went with.</p>
 			<h1>Problems</h1>
-			<p></p>
+			<p>Most of the problems I encountered came courtesy of the bonus tasks. Once I was able to get my output into my HTML with <code>document.getElementById();</code> and <code>defer</code>, I had to iterate with <code>innerHTML</code>. I initially set it equal to a constructed string. After testing, I realized I needed to use += to maintain all of the previous test statements.</p>
 			<h1>Results</h1>
-			<p></p>
+			<p>The lab was challenging, but as mentioned, enjoyable. In the end, I was able to get my the functions to log both to the console and to my webpage. Check it out.</p>
 			<h3>Script Output</h3>
+			<div id=output></div>
 		</div>
 		<nav>
 			<div>
