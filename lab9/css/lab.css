@@ -1,0 +1,23 @@
+body, html {
+  background-color: #191a20;
+}
+
+header {
+  background-image: url("../img/sf2014.png");
+}
+
+#title span {
+  color: #ffe64b;
+}
+
+#content, nav, footer {
+  background-color: #62fbed;
+}
+
+#output {
+  border: solid .1em black;
+  padding: 1em;
+  width: 40%;
+  margin-bottom: 1em;
+  text-transform: none;
+}
