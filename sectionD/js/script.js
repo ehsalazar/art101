@@ -7,16 +7,16 @@ function userInfo(first, last){
     return `My first name is ${first} and my last name is ${last}.`
 }
 
-console.log(userInfo("Elan","Salazar"));
+// console.log(userInfo("Elan","Salazar"));
 
 var funFunc = function(){
     console.log("Hi!");
 };
 
-setTimeout(funFunc,3000);
+// setTimeout(funFunc,3000);
 
 //anonymous functions
-setTimeout(function(){console.log("Hi!");},5000);
+// setTimeout(function(){console.log("Hi!");},5000);
 
 // Section D - February 2, 2021
 // exploring functions and scope
