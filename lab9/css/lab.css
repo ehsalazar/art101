@@ -1,17 +1,17 @@
 body, html {
-  background-color: #191a20;
+  background-color: #070708;
 }
 
 header {
-  background-image: url("../img/sf2014.png");
+  background-image: url("../img/sac2019.png");
 }
 
 #title span {
-  color: #ffe64b;
+  color: #9aa346;
 }
 
 #content, nav, footer {
-  background-color: #62fbed;
+  background-color: #e879b6;
 }
 
 #output {
