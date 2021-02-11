@@ -1,0 +1,52 @@
+body, html {
+  background-color: #132138;
+}
+
+header {
+  background-image: url("../img/munich.png");
+}
+
+#title span {
+  color: #f9c753;
+}
+
+#content, nav, footer {
+  background-color: #c7c1ad;
+}
+
+.output {
+  border: solid .1em black;
+  padding: 1em;
+  width: 45%;
+  margin-bottom: 1em;
+}
+
+code {
+  text-transform: none;
+}
+
+
+#nametag {
+  width: 20em;
+  display: block;
+  float: right;
+  margin: 0.5em;
+}
+
+#nametag img {
+    width: 100%;
+    height: auto;
+}
+
+.name {
+  text-transform: none;
+  position: absolute;
+  top: 8em;
+  right: 1.6em;
+  width: 5.7em;
+  word-wrap: break-word;
+  font-size: 275%;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.2em;
+}
