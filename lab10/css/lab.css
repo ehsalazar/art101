@@ -14,7 +14,7 @@ header {
   background-color: #a9beda;
 }
 
-.output {
+#output {
   border: solid .1em black;
   padding: 1em;
   width: 45%;
@@ -39,13 +39,13 @@ code {
 }
 
 .name {
+  font-family: Comic Sans MS, Comic Sans, cursive;
   text-transform: none;
   position: absolute;
-  top: 8em;
-  right: 1.6em;
-  width: 5.7em;
-  word-wrap: break-word;
-  font-size: 275%;
+  top: 8.6em;
+  right: 0.9em;
+  width: 8em;
+  font-size: 250%;
   font-weight: bold;
   text-align: center;
   margin: 0.2em;

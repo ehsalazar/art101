@@ -63,6 +63,15 @@ nav {
   border: solid 0.2em black;
 }
 
+.nav-row {
+ display: flex;
+}
+
+.nav-column {
+ flex: 33%;
+ padding: 0.33em;
+}
+
 #content h1,
 nav h2 {
   margin-top: 0;
