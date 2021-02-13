@@ -2,7 +2,6 @@
 // Author: Élan Salazar
 // Created: February 10, 2021
 
-
 // Borrow the sort() function or my anagram() function from Lab 7.
 
 //Convert string to title case with JavaScript
@@ -24,7 +23,6 @@ const shuffleName = (name) => {
   let shuffledStr = arr.join('');
   return toTitleCase(shuffledStr);
 };
-
 
 // find the button element
 var buttonEl = document.getElementById("submit-button");
@@ -78,7 +76,6 @@ buttonEl.addEventListener('click', function(){
   glitchScreen();
 
   // Runs that value through your sort() or anagram() function and saves the results.
-  var sortedName = sortName(userInput);
   var shuffledName = shuffleName(userInput);
 
   // Replaces the html in <div id=output> with the results.
@@ -88,5 +85,5 @@ buttonEl.addEventListener('click', function(){
   outputEl.appendChild(newEl3);
 
   //fix screen
-  setTimeout(fixScreen, 1000);
+  setTimeout(fixScreen, 2000);
 });
