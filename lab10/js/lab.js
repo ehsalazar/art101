@@ -5,13 +5,6 @@
 
 // Borrow the sort() function or my anagram() function from Lab 7.
 
-// Sort the letters of the user's name and return those from the function.
-// https://www.w3schools.com/jsref/jsref_sort.asp
-const sortName = (name) => {
-  let newName = name.toLowerCase().split('').sort().join('');
-  return newName;
-};
-
 //Convert string to title case with JavaScript
 //https://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript
 // https://www.w3docs.com/snippets/javascript/how-to-capitalize-the-first-letter-in-a-string-in-javascript.html
@@ -40,26 +33,60 @@ var buttonEl = document.getElementById("submit-button");
 var outputEl = document.getElementById("output");
 
 // create new elements
-// var newEl1 = document.createElement("p");
+var newEl1 = document.createElement("p");
 var newEl2 = document.createElement("p");
 var newEl3 = document.createElement("div")
+newEl1.innerHTML = "Just kidding!!!"
 newEl2.innerHTML = "Look! The name tag has your new, alphabet soup name.";
 newEl3.className = "name";
+
+// Bonus
+// find the body element
+var bodyEl = document.getElementById("body-element");
+
+// find the hide element
+var hideEl = document.getElementById("hide");
+
+// create new image element
+var glitchEl = document.createElement("img");
+glitchEl.id = "glitch"
+glitchEl.src = "img/michael-dziedzic-unsplash.jpg"
+// Photo by Michael Dziedzic on Unsplash
+// https://unsplash.com/@lazycreekimages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+// https://unsplash.com/s/photos/glitch-art?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
+
+//glitch screen
+// https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+const glitchScreen = () => {
+  bodyEl.appendChild(glitchEl);
+  glitchEl.style.display = "block";
+  hideEl.style.display = "none";
+}
+
+//fix screen
+const fixScreen = () => {
+  hideEl.style.display = "block";
+  glitchEl.style.display = "none";
+}
 
 // add an event listener to button
 buttonEl.addEventListener('click', function(){
   // Gets the value of your input field
   var userInput = document.getElementById('user-name').value;
 
+  // Glitch screen
+  glitchScreen();
+
   // Runs that value through your sort() or anagram() function and saves the results.
   var sortedName = sortName(userInput);
   var shuffledName = shuffleName(userInput);
 
   // Replaces the html in <div id=output> with the results.
-  // newEl1.innerHTML = `Here are the sorted letters in your name : ${sortedName}`;
-  // outputEl.appendChild(newEl1);
-
+  outputEl.appendChild(newEl1);
   outputEl.appendChild(newEl2);
   newEl3.innerHTML = `${shuffledName}`;
   outputEl.appendChild(newEl3);
+
+  //fix screen
+  setTimeout(fixScreen, 1000);
 });
