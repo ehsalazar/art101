@@ -1,0 +1,22 @@
+body, html {
+  background-color: #01044d;
+}
+
+header {
+  background-image: url("../img/paris.png");
+}
+
+#title span {
+  color: #d5dbdd;
+}
+
+#content, nav, footer {
+  background-color: #aab0b9;
+}
+
+#output {
+  border: solid .1em black;
+  padding: 1em;
+  width: 45%;
+  margin-bottom: 1em;
+}
