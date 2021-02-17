@@ -1,22 +1,31 @@
 body, html {
-  background-color: #01044d;
+  background-color: #290503;
 }
 
 header {
-  background-image: url("../img/paris.png");
+  background-image: url("../img/paris11arr2019.png");
 }
 
 #title span {
-  color: #d5dbdd;
+  color: #f9f9fb;
 }
 
 #content, nav, footer {
-  background-color: #aab0b9;
+  background-color: #39dddc;
 }
 
-#output {
+button {
+  margin-bottom: 1em;
+  text-transform: lowercase;
+}
+
+.special {
+  color: rgb(75,10,20);
   border: solid .1em black;
   padding: 1em;
-  width: 45%;
-  margin-bottom: 1em;
+}
+
+.button-special {
+  background: linear-gradient(90deg, rgba(75,10,20,1) 0%, rgba(242,149,64,1) 100%);
+  color: white;
 }
