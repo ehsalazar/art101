@@ -20,6 +20,7 @@ button {
 }
 
 .special {
+  background-color: #80e09e;
   color: rgb(75,10,20);
   border: solid .1em black;
   padding: 1em;
