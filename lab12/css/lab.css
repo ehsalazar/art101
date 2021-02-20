@@ -1,0 +1,32 @@
+body, html {
+  background-color: #290503;
+}
+
+header {
+  background-image: url("");
+}
+
+#title span {
+  color: #f9f9fb;
+}
+
+#content, nav, footer {
+  background-color: #39dddc;
+}
+
+button {
+  margin-bottom: 1em;
+  text-transform: lowercase;
+}
+
+#script {
+  border: solid .1em black;
+  padding: 1em;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+.credit {
+  font-size: 75%;
+}
