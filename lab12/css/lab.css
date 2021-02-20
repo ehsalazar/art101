@@ -1,17 +1,17 @@
 body, html {
-  background-color: #290503;
+  background-color: #010233;
 }
 
 header {
-  background-image: url("");
+  background-image: url("../img/hamburg-karol.png");
 }
 
 #title span {
-  color: #f9f9fb;
+  color: #fdd139;
 }
 
 #content, nav, footer {
-  background-color: #39dddc;
+  background-color: #c8cbc8;
 }
 
 button {
@@ -23,8 +23,8 @@ button {
   border: solid .1em black;
   padding: 1em;
   width: 95%;
-  margin: auto;
-  margin-bottom: 1em;
+  margin: 2em auto 1em auto;
+  background-color: #70b659;
 }
 
 .credit {
