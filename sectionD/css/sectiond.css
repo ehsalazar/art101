@@ -14,12 +14,18 @@ header {
   background-color: #bed0dc;
 }
 
-/* https://www.w3schools.com/tags/tag_iframe.asp
-https://www.w3schools.com/html/html_youtube.asp
-https://www.w3schools.com/html/html5_video.asp */
-iframe, img {
-  display: block;
-  width: 50%;
-  margin-right: auto;
-  margin-left: auto;
+.box_even {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border: solid 3px black;
+  float: left;
+}
+
+.box_odd {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  border: solid 3px black;
+  float: left;
 }
