@@ -1,0 +1,22 @@
+body, html {
+  background-color: #010233;
+}
+
+header {
+  background-image: url();
+}
+
+#title span {
+  color: #fdd139;
+}
+
+#content, nav, footer {
+  background-color: #c8cbc8;
+}
+
+/* #script {
+  border: solid .1em black;
+  padding: 1em;
+  width: 95%;
+  margin: 2em auto 1em auto;
+} */
