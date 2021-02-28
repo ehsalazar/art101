@@ -107,3 +107,12 @@ footer li {
 code {
   text-transform: none;
 }
+
+.content_links {
+  font-size: 75%;
+  text-decoration: none;
+}
+
+.js_link {
+  float: right;
+}

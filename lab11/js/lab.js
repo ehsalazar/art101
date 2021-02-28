@@ -9,7 +9,7 @@
 $("#challenge").append("<button id=challenge-button>");
 $("#problems").append("<button id=problems-button>");
 $("#results").append("<button id=results-button>");
-$("#content").append("<button id=color-button>"); //bonus
+$("#output").append("<button id=color-button>"); //bonus
 
 // Give it a text label
 $("#challenge-button").html("Challenge Magic");
