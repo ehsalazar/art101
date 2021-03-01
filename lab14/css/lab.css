@@ -1,0 +1,22 @@
+body, html {
+  background-color: #28241d;
+}
+
+header {
+  background-image: url();
+}
+
+#title span {
+  color: #a4d6e7;
+}
+
+#content, nav, footer {
+  background-color: #ececdc;
+}
+
+/* #output {
+  border: solid .1em black;
+  padding: 1em;
+  width: 95%;
+  margin: 2em auto 1em auto;
+} */
