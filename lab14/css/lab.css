@@ -1,5 +1,5 @@
 body, html {
-  background-color: #28241d;
+  background-color: #12130e;
 }
 
 header {
@@ -7,11 +7,11 @@ header {
 }
 
 #title span {
-  color: #a4d6e7;
+  color: #ffb077;
 }
 
 #content, nav, footer {
-  background-color: #ececdc;
+  background-color: #cecdc5;
 }
 
 img {
