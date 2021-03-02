@@ -24,17 +24,38 @@ $("#color-button").html("Button Magic"); //bonus
 // https://www.w3schools.com/jquery/html_toggleclass.asp
 $("#challenge-button").click(function(){
   $("#challenge").toggleClass("special");
-  $("#color-button").toggleClass("button-special"); //bonus
+  //when the special class is added to this div, it's removed from the others, allowing only one special div at a time
+  $("#problems, #results").removeClass("special");
+  //if a div has the special class, add the button-special class to the color-botton, otherwise remove it
+  if ($("#challenge").hasClass("special")){
+    $("#color-button").addClass("button-special");
+  } else {
+    $("#color-button").removeClass("button-special");
+  }
 });
 
 $("#problems-button").click(function(){
   $("#problems").toggleClass("special");
-  $("#color-button").toggleClass("button-special"); //bonus
+  //when the special class is added to this div, it's removed from the others, allowing only one special div at a time
+  $("#challenge, #results").removeClass("special"); 
+  //if a div has the special class, add the button-special class to the color-botton, otherwise remove it
+  if ($("#problems").hasClass("special")){
+    $("#color-button").addClass("button-special");
+  } else {
+    $("#color-button").removeClass("button-special");
+  }
 });
 
 $("#results-button").click(function(){
   $("#results").toggleClass("special");
-  $("#color-button").toggleClass("button-special"); //bonus
+  //when the special class is added to this div, it's removed from the others, allowing only one special div at a time
+  $("#problems, #challenge").removeClass("special");
+  //if a div has the special class, add the button-special class to the color-botton, otherwise remove it
+  if ($("#results").hasClass("special")){
+    $("#color-button").addClass("button-special");
+  } else {
+    $("#color-button").removeClass("button-special");
+  }
 });
 
 // Bonus
