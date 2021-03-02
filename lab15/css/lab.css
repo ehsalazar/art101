@@ -1,0 +1,27 @@
+body, html {
+  background-color: #12130e;
+}
+
+header {
+  /* background-image: url("../img/munich-wrench.png"); */
+}
+
+#title span {
+  color: #ffb077;
+}
+
+#content, nav, footer {
+  background-color: #cecdc5;
+}
+
+#output {
+  border: solid .1em black;
+  padding: 1em;
+  width: 95%;
+  margin: 2em auto 1em auto;
+}
+
+button {
+  /* margin-bottom: 1em; */
+  text-transform: lowercase;
+}
