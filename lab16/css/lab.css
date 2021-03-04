@@ -1,0 +1,48 @@
+body, html {
+  background-color: #141e33;
+}
+
+header {
+  background-image: url("");
+}
+
+#title span {
+  color: #ebbd55;
+}
+
+#content, nav, footer {
+  background-color: #e0dcd9;
+}
+
+#output {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+button {
+  width: 33%;
+  margin-bottom: 1em;
+  transition-duration: 0.4s;
+  text-transform: lowercase;
+  cursor: pointer;
+  background-color: #9babd7;
+  color: black;
+  border: .2em solid #215da4;
+}
+
+button:hover {
+  background-color: #215da4;
+  color: white;
+}
+
+#output img {
+  width: 33%;
+  height: auto;
+  margin-right: auto;
+}
+
+#output video {
+  width: 33%;
+  height: auto;
+  margin-right: auto;
+}
