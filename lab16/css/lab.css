@@ -1,17 +1,17 @@
 body, html {
-  background-color: #141e33;
+  background-color: #003661;
 }
 
 header {
-  background-image: url("");
+  background-image: url("../img/paris-7th.png");
 }
 
 #title span {
-  color: #ebbd55;
+  color: #f2f200;
 }
 
 #content, nav, footer {
-  background-color: #e0dcd9;
+  background-color: #b1b4b3;
 }
 
 #comic {
@@ -41,14 +41,14 @@ button {
   transition-duration: 0.4s;
   text-transform: lowercase;
   cursor: pointer;
-  background-color: #9babd7;
+  background-color: #97efff;
   color: black;
-  border: .2em solid #215da4;
+  border: .2em solid #003661;
 }
 
 button:hover {
-  background-color: #215da4;
-  color: white;
+  background-color: #f4f0ac;
+  color: #003661;
 }
 
 .comic-button {
