@@ -14,13 +14,29 @@ header {
   background-color: #e0dcd9;
 }
 
-#output {
+#comic {
+  margin: 1em auto 1em auto;
+  max-width: 70%;
+}
+
+#output img {
+  width: 75%;
+  height: auto;
+  margin: 1.5em auto 3em auto;
+  display: block;
+}
+
+#output h3 {
+  text-align: center;
+}
+
+#btn-grp {
+  text-align: center;
   margin-top: 1em;
-  margin-bottom: 1em;
 }
 
 button {
-  width: 33%;
+  width: 20%;
   margin-bottom: 1em;
   transition-duration: 0.4s;
   text-transform: lowercase;
@@ -35,14 +51,9 @@ button:hover {
   color: white;
 }
 
-#output img {
-  width: 33%;
-  height: auto;
-  margin-right: auto;
-}
-
-#output video {
-  width: 33%;
-  height: auto;
-  margin-right: auto;
+.comic-button {
+  display: none;
+  width: auto;
+  margin: .5em;
+  padding: .5em;
 }
