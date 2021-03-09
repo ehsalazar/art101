@@ -49,3 +49,11 @@ header {
 #text_box_blue {
   border: solid 1em blue;
 }
+
+.images {
+  width: 5em;
+}
+
+#img_id_5 {
+  filter: grayscale(100%);
+}
