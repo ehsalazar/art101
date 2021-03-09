@@ -11,6 +11,8 @@ function comicOutput(title, img, alt) {
 }
 
 var defaultEndpoint = "https://xkcd.com/info.0.json"
+var proxy = 'https://cors-anywhere.herokuapp.com/'
+var proxyEndpoint = proxy + defaultEndpoint;
 var comicObj = {};
 var subsequentComicObj = {};
 
@@ -37,7 +39,7 @@ function firstApiCall(url){
 }
 
 $("#activate").click(function (){
-  firstApiCall(defaultEndpoint);
+  firstApiCall(proxyEndpoint);
   $(".comic-button").show();
   $("#activate").hide();
 })
@@ -65,7 +67,7 @@ function subsequentApiCalls(url){
 $("#prev-button").click(function (){
   if (subsequentComicObj.num > 1) {
     var prevNum = subsequentComicObj.num - 1;
-    var newUrl = `https://xkcd.com/${prevNum}/info.0.json`
+    var newUrl = proxy + `https://xkcd.com/${prevNum}/info.0.json`
   } else if (comicObj) {
     prevNum = comicObj.num - 1;
     newUrl = `https://xkcd.com/${prevNum}/info.0.json`
@@ -76,7 +78,7 @@ $("#prev-button").click(function (){
 $("#next-button").click(function (){
   if (subsequentComicObj.num < comicObj.num) {
     var nextNum = subsequentComicObj.num + 1;
-    var newUrl = `https://xkcd.com/${nextNum}/info.0.json`
+    var newUrl = proxy + `https://xkcd.com/${nextNum}/info.0.json`
   } else {
     newUrl = `https://xkcd.com/info.0.json`
   }
@@ -84,18 +86,18 @@ $("#next-button").click(function (){
 })
 
 $("#first-button").click(function () {
-  var newUrl = `https://xkcd.com/1/info.0.json`
+  var newUrl = proxy + `https://xkcd.com/1/info.0.json`
   subsequentApiCalls(newUrl);
 })
 
 $("#random-button").click(function () {
   var randomNum = Math.floor(Math.random() * comicObj.num)
-  var newUrl = `https://xkcd.com/${randomNum}/info.0.json`
+  var newUrl = proxy + `https://xkcd.com/${randomNum}/info.0.json`
   subsequentApiCalls(newUrl);
 })
 
 $("#last-button").click(function (){
-  subsequentApiCalls(defaultEndpoint);
+  subsequentApiCalls(proxyEndpoint);
 })
 
 
