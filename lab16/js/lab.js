@@ -10,9 +10,8 @@ function comicOutput(title, img, alt) {
   $("#output").html(output);
 }
 
-var defaultEndpoint = "https://xkcd.com/info.0.json"
-var proxy = 'https://cors-anywhere.herokuapp.com/'
-var proxyEndpoint = proxy + defaultEndpoint;
+// https://github.com/mrmartineau/xkcd-api
+var defaultEndpoint = "https://xkcd.now.sh/?comic=latest"
 var comicObj = {};
 var subsequentComicObj = {};
 
@@ -39,7 +38,7 @@ function firstApiCall(url){
 }
 
 $("#activate").click(function (){
-  firstApiCall(proxyEndpoint);
+  firstApiCall(defaultEndpoint);
   $(".comic-button").show();
   $("#activate").hide();
 })
@@ -67,10 +66,10 @@ function subsequentApiCalls(url){
 $("#prev-button").click(function (){
   if (subsequentComicObj.num > 1) {
     var prevNum = subsequentComicObj.num - 1;
-    var newUrl = proxy + `https://xkcd.com/${prevNum}/info.0.json`
+    var newUrl = `https://xkcd.now.sh/?comic=${prevNum}`
   } else if (comicObj) {
     prevNum = comicObj.num - 1;
-    newUrl = `https://xkcd.com/${prevNum}/info.0.json`
+    newUrl = `https://xkcd.now.sh/?comic=${prevNum}`
   }
   subsequentApiCalls(newUrl);
 })
@@ -78,7 +77,7 @@ $("#prev-button").click(function (){
 $("#next-button").click(function (){
   if (subsequentComicObj.num < comicObj.num) {
     var nextNum = subsequentComicObj.num + 1;
-    var newUrl = proxy + `https://xkcd.com/${nextNum}/info.0.json`
+    var newUrl = `https://xkcd.now.sh/?comic=${nextNum}`
   } else {
     newUrl = `https://xkcd.com/info.0.json`
   }
@@ -86,18 +85,18 @@ $("#next-button").click(function (){
 })
 
 $("#first-button").click(function () {
-  var newUrl = proxy + `https://xkcd.com/1/info.0.json`
+  var newUrl = `https://xkcd.now.sh/?comic=1`
   subsequentApiCalls(newUrl);
 })
 
 $("#random-button").click(function () {
   var randomNum = Math.floor(Math.random() * comicObj.num)
-  var newUrl = proxy + `https://xkcd.com/${randomNum}/info.0.json`
+  var newUrl = `https://xkcd.now.sh/?comic=${randomNum}`
   subsequentApiCalls(newUrl);
 })
 
 $("#last-button").click(function (){
-  subsequentApiCalls(proxyEndpoint);
+  subsequentApiCalls(defaultEndpoint);
 })
 
 
