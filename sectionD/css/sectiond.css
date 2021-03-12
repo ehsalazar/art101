@@ -57,3 +57,12 @@ header {
 #img_id_5 {
   filter: grayscale(100%);
 }
+
+figcaption {
+  width: 5em;
+  font-size: 70%;
+}
+
+figure {
+  display: inline-block;
+}

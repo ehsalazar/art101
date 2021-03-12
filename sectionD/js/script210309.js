@@ -1,3 +1,5 @@
+
+
 function getajaxdata(){
   // $.ajax({
   //   async: true,
@@ -38,7 +40,7 @@ function getajaxdata(){
   $.ajax(settings).done(function (response) {
     var songsObj = response.response.songs;
     for (var i = 0; i < songsObj.length; i++) {
-       $('#ajax_text').append("<img id='img_id_"+i+"' class = 'images' src="+response.response.songs[i].song_art_image_url+">");
+       $('#ajax_text').append("<figure><img id='img_id_"+i+"' class = 'images' src="+response.response.songs[i].song_art_image_url+"><figcaption>" + response.response.songs[i].full_title +"</figcaption></figure>");
     }
   	console.log(songsObj);
     });
