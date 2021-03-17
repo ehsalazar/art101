@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SV COVID-19 INFO</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../css/site.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/lab.js" defer></script>
+</head>
+<body>
+	<div class="btn-group">
+	  <button class="county_button" id="alameda_button">Alameda</button>
+	  <button class="county_button" id="contracosta_button">Contra Costa</button>
+	  <button class="county_button" id="monterey_button">Monterey</button>
+	  <button class="county_button" id="sanbenito_button">San Benito</button>
+	  <button class="county_button" id="sanfrancisco_button">San Francisco</button>
+	  <button class="county_button" id="sanmateo_button">San Mateo</button>
+	  <button class="county_button" id="santaclara_button">Santa Clara</button>
+	  <button class="county_button" id="santacruz_button">Santa Cruz</button>
+	</div>
+	<div class="counties hidden" id="alameda">
+		<h1>Alameda County</h1>
+		<button class="info_button" id="testing_button_alameda"><h2>Testing Sites</h2></button>
+			<div class="info" id="testing_alameda">
+				<strong>Alameda Health Systems<br>
+					Henry J Kaiser<br></strong>
+					10 10th St Oakland, CA 94607<br>
+					Tuesdays, Thursdays and Saturdays: 8:30am – 4:00pm<br>
+					<a href="https://home.color.com/covid/sign-up/start?partner=cdph150" target="_blank">Register Here</a><br><br>
+				<strong>Martin Luther King Jr. Youth Center<br></strong>
+					1730 Oregon St, Berkeley, CA 94703<br>
+					Monday – Friday: 8:00am – 8:00pm<br>
+					<a href="https://lhi.care/covidtesting" target="_blank">Register Here</a>
+					or call (888) 634-1123<br><br>
+				<strong>Bay Area Community Health Liberty Clinic<br></strong>
+					39500 Liberty Street, Fremont CA 94538<br>
+					Monday – Friday: 1:00pm – 4:15pm and Saturday 9:00am – 12:00<br>
+					Please call (510) 770-8040 to schedule an appointment and wear a mask<br>
+					Language assistance is available<br>
+					<a href="https://home.color.com/covid/sign-up/start?partner=cdph098" target="_blank">Register Here</a><br><br>
+				<strong>Alameda County Fairgrounds – Gate 12<br></strong>
+					Road 12, Valley Ave, Pleasanton, CA 94566<br>
+					Monday – Friday: 9:00am – 12:00pm, or while supplies last<br>
+					No appointment required!<br>
+					<a href="https://www.valleycare.com/regional-testing-site-for-covid-19/" target="_blank">Visit Here</a><br><br>
+				<strong>San Leandro Marina Community Center<br></strong>
+					15301 Wicks Blvd., San Leandro, CA 94579<br>
+					Tuesday – Saturday, 7:00am – 7:00pm<br>
+					<a href="https://lhi.care/covidtesting" target="_blank">Register Here</a>
+					or call (888) 634-1123 (English & Spanish)<br><br>
+				<a href="https://covid-19.acgov.org/testing.page?#Community" target="_blank"><strong>Additional Testing Sites</strong></a><br><br>
+			</div>
+		<button class="info_button" id="vaccination_button_alameda"><h2>Vaccination Resources</h2></button>
+			<div class="info" id="vaccination_alameda">
+				<strong>Alameda Health System</strong><br>
+					Patients who currently receive care in any AHS outpatient clinic<br>
+					(primary care, specialty, dental, or behavioral health)<br>
+					and meet current eligibility.<br>
+					<strong>For more information, visit: <a href="http://www.alamedahealthsystem.org/COVID19-Updates" target="_blank">here</a></strong><br><br>
+				<strong>Community Health Centers<br></strong>
+					Patients who meet current eligibility.<br>
+					<strong>Contact your respective health care provider:</strong><br>
+					Community Health Center Network, Roots, Davis Street<br><br>
+				<strong>CVS and Rite Aid<br></strong>
+					Patients who meet current eligibility.<br>
+					<strong>For more information, visit:<br>
+					<a href="https://www.cvs.com/immunizations/covid-19-vaccine" target="_blank">CVS</a> and/or <a href="https://www.riteaid.com/pharmacy/covid-qualifier" target="_blank">Rite Aid</a></strong><br><br>
+				<strong>Kaiser Permanente<br></strong>
+					Kaiser members who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="https://healthy.kaiserpermanente.org/health-wellness/coronavirus-information/covid-vaccine" target="_blank">here</a></strong><br><br>
+				<strong>Sutter Health<br></strong>
+					Sutter members who meet current eligibility.<br>
+					<strong>For more information, visit:<br>
+					<a href="https://www.sutterhealth.org/for-patients/health-alerts/covid-19-vaccine" target="_blank">here</a> or call (844) 987-6115</strong><br><br>
+				<strong>Stanford Health Care<br></strong>
+					Stanford members who meet current eligibility.<br>
+					<strong>For more information, visit:<br>
+				<a href="http://www.stanfordhealthcare.org/covid19updates" target="_blank">here</a> or call (610) 498-9000</strong><br><br>
+				<a href="https://covid-19.acgov.org/vaccines" target="_blank"><strong>Additional Vaccination Information</strong></a><br><br>
+			</div>
+		<button class="info_button" id="additional_button_alameda"><h2>Additional County Resources</h2></button>
+			<div class="info" id="additional_alameda">
+				<a href="https://covid-19.acgov.org/index.page" target="_blank"><strong>Alameda County Health Care Services Agency - Public Health Department</strong></a><br><br>
+				<a href="https://covid-19.acgov.org/sip.page?" target="_blank"><strong>Shelter in Place Orders</strong></a><br><br>
+				<a href="https://covid-19.acgov.org/vaccines" target="_blank"><strong>Vaccination Guidance & Resources</strong></a><br><br>
+				<a href="https://covid-19.acgov.org/health-safety.page?" target="_blank"><strong>Health & Safety</strong></a><br><br>
+				<a href="https://covid-19.acgov.org/testing.page?" target="_blank"><strong>Testing for COVID-19</strong></a><br>
+			</div>
+	</div>
+	<div class="counties hidden" id="contracosta">
+		<h1>Contra Costa County</h1>
+		<button class="info_button" id="testing_button_contracosta"><h2>Testing Sites</h2></button>
+			<div class="info" id="testing_contracosta">
+				<strong>Concord – Central<br></strong>
+					1034 Oak Grove Rd<br>
+					Walk-Up Site<br>
+					Monday – Friday: 8:00am – 4:00pm<br>
+					<a href="https://mychart.cchealth.org/mychart/openscheduling?specialty=9&hidespecialtysection=1&public=1&lang=english" target="_blank">Register Here</a><br><br>
+				<strong>Pittsburg<br></strong>
+					2311 Loveridge Rd<br>
+					Drive-Thru Site<br>
+					Monday – Saturday: 8:00am – 4:00pm<br>
+					Call (844) 421-0804<br><br>
+				<strong>Richmond<br></strong>
+					25th St and Nevin Ave<br>
+					Drive-Thru Site<br>
+					Monday – Friday: 8:00am – 3:30pm<br>
+					<a href="https://mychart.cchealth.org/mychart/openscheduling?specialty=9&hidespecialtysection=1&public=1&lang=english" target="_blank">Register Here</a><br><br>
+				<strong>San Pablo<br></strong>
+					13601 San Pablo Ave<br>
+					Walk-Up Site<br>
+					Monday – Saturday: 8:00am – 4:00pm<br>
+					Call (844) 421-0804<br><br>
+				<strong>San Ramon<br></strong>
+					2600 Camino Ramon<br>
+					Drive-Thru Site<br>
+					Monday – Friday: 8:00am – 3:30pm<br>
+					<a href="https://mychart.cchealth.org/mychart/openscheduling?specialty=9&hidespecialtysection=1&public=1&lang=english" target="_blank">Register Here</a><br><br>
+				<a href="https://www.coronavirus.cchealth.org/get-tested" target="_blank"><strong>Additional Testing Sites</strong></a><br><br>
+			</div>
+		<button class="info_button" id="vaccination_button_contracosta"><h2>Vaccination Resources</h2></button>
+			<div class="info" id="vaccination_contracosta">
+				<strong>Contra Costa Health Services (CCHS)</strong><br>
+					The county health department will immunize all eligible people,<br>
+					whether they have insurance or not,<br>
+					who meet current eligibility.<br>
+					<strong>To request an appointment, visit: <a href="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=3tkgKC3cY0OGJvKwA0OMRRd1QfIVjtpAkM-cYiio35ZUM0hIWVpaOTJHSDBTM0ZLSU5SNUM3NEo0OCQlQCN0PWcu" target="_blank">here</a></strong><br><br>
+				<strong>Oakland – Alameda Coliseum (FEMA and Cal OES)<br></strong>
+					Patients who meet current eligibility.<br>
+					<strong>For more information, visit:<br>
+					<a href="https://myturn.ca.gov/" target="_blank">here</a> or call (833) 422-4255</strong><br><br>
+				<strong>CVS and Walgreens<br></strong>
+					Patients who meet current eligibility.<br>
+					<strong>For more information, visit:<br>
+					<a href="https://www.cvs.com/immunizations/covid-19-vaccine" target="_blank">CVS</a> or <a href="https://www.walgreens.com/findcare/vaccination/covid-19" target="_blank">Walgreens</a></strong><br><br>
+				<strong>Kaiser Permanente<br></strong>
+					Kaiser members who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="https://mydoctor.kaiserpermanente.org/covid-19/covid-19-vaccine" target="_blank">here</a></strong><br><br>
+				<strong>Sutter Health<br></strong>
+					Sutter members who meet current eligibility.<br>
+					<strong>For more information, visit:<br>
+					<a href="https://www.sutterhealth.org/for-patients/health-alerts/covid-19-vaccine" target="_blank">here</a> or call (844) 987-6115</strong><br><br>
+				<a href="https://www.coronavirus.cchealth.org/get-vaccinated" target="_blank"><strong>Additional Vaccination Information</strong></a><br><br>
+			</div>
+		<button class="info_button" id="additional_button_contracosta"><h2>Additional County Resources</h2></button>
+			<div class="info" id="additional_contracosta">
+				<a href="https://www.coronavirus.cchealth.org/overview" target="_blank"><strong>Contra Costa Health Services</strong></a><br><br>
+				<a href="https://www.coronavirus.cchealth.org/health-services-updates" target="_blank"><strong>Health Services Updates</strong></a><br><br>
+				<a href="https://www.coronavirus.cchealth.org/vaccine" target="_blank"><strong>Vaccination Guidance & Resources</strong></a><br><br>
+				<a href="https://www.coronavirus.cchealth.org/get-tested" target="_blank"><strong>Testing for COVID-19</strong></a><br><br>
+				<a href="https://www.coronavirus.cchealth.org/resources" target="_blank"><strong>Additional Resources</strong></a><br>
+			</div>
+	</div>
+	<div class="counties hidden" id="monterey">
+		<h1>Monterey County</h1>
+		<button class="info_button" id="testing_button_monterey"><h2>Testing Sites</h2></button>
+			<div class="info" id="testing_monterey">
+				<strong>Carmel<br></strong>
+					Safeway 706<br>
+					104 Midvalley<br>
+					Monday – Friday: 9:00am – 7:00pm, Saturday – Sunday: 8:30am – 5:00pm<br>
+					<a href="https://scheduletest.com/" target="_blank">Register Here</a><br>
+					or call (831) 624-1620</strong><br><br>
+				<strong>Castroville<br></strong>
+					OptumServe Site<br>
+					Castroville Library<br>
+					11160 Speegle St.<br>
+					Tuesday – Saturday: 8:00am – 8:00pm<br>
+					<a href="https://lhi.care/covidtesting" target="_blank">Register Here</a><br>
+					or call (888) 634-1123</strong><br><br>
+				<strong>Monterey<br></strong>
+					Doctors On Duty<br>
+					501 Lighthouse Avenue<br>
+					Monday – Friday: 8:00am – 6:00pm, Saturday – Sunday: 8:00am – 4:00pm<br>
+					<a href="http://doctorsonduty.com/locations/" target="_blank">Register Here</a><br>
+					or call (831) 649-0770</strong><br><br>
+				<strong>Salinas<br></strong>
+					Safeway 2654
+					1516 Constitution Blvd<br>
+					Monday – Friday: 9:00am – 7:00pm, Saturday – Sunday: 8:30am – 5:00pm<br>
+					<a href="https://scheduletest.com/" target="_blank">Register Here</a><br>
+					or call (831) 444-3625</strong><br><br>
+				<strong>Watsonville<br></strong>
+					Doctors on Duty<br>
+					1301 Main St<br>
+					Monday – Friday: 8:00am – 6:00pm, Saturday – Sunday: 8:00am – 2:00pm<br>
+					<a href="http://doctorsonduty.com/locations/" target="_blank">Register Here</a><br>
+					or call (831) 722-1444</strong><br><br>
+				<a href="https://www.co.monterey.ca.us/home/showpublisheddocument?id=99575" target="_blank"><strong>Printable List of Additional Testing Sites</strong></a><br><br>
+			</div>
+		<button class="info_button" id="vaccination_button_monterey"><h2>Vaccination Resources</h2></button>
+			<div class="info" id="vaccination_monterey">
+				<strong>Community Hospital of the Monterey Peninsula</strong><br>
+					Various times, dates, and locations<br>
+					Open to those who meet current eligibility.<br>
+					<strong>To request an appointment, visit: <a href="https://www.chomp.org/coronavirus/vaccine/appointments/#.YCcBGZNKgb0" target="_blank">here</a></strong><br><br>
+				<strong>Safeway Pharmacy<br></strong>
+					Open to those who meet current eligibility.<br>
+					1546 N Main St, Salinas, CA 93906<br>
+					<strong>For more information, visit:
+					<a href="https://mhealthsystem.com/1110monterey" target="_blank">here</a></strong><br>
+					1516 Constitution Blvd, Salinas, CA 93905<br>
+					<strong>For more information, visit:
+					<a href="https://mhealthsystem.com/2654monterey" target="_blank">here</a></strong><br><br>
+				<strong>CVS<br></strong>
+					Open to those who meet current eligibility.<br>
+					<strong>For more information, visit:
+					<a href="https://www.cvs.com/vaccine/intake/store/covid-screener/covid-qns" target="_blank">CVS</a></strong><br><br>
+				<a href="https://www.co.monterey.ca.us/government/departments-a-h/health/diseases/2019-novel-coronavirus-covid-19/vaccination-registration" target="_blank"><strong>Additional Vaccination Information</strong></a><br><br>
+			</div>
+		<button class="info_button" id="additional_button_monterey"><h2>Additional County Resources</h2></button>
+			<div class="info" id="additional_monterey">
+				<a href="https://www.co.monterey.ca.us/government/departments-a-h/administrative-office/office-of-emergency-services/response/covid-19" target="_blank"><strong>Monterey County Office of Emergency Services</strong></a><br><br>
+				<a href="https://www.co.monterey.ca.us/government/departments-a-h/health/diseases/2019-novel-coronavirus-covid-19" target="_blank"><strong>COVID Homepage</strong></a><br><br>
+				<a href="https://www.co.monterey.ca.us/government/departments-a-h/health/diseases/2019-novel-coronavirus-covid-19/vaccination-registration" target="_blank"><strong>Vaccination Registration</strong></a><br><br>
+				<a href="https://www.co.monterey.ca.us/government/departments-a-h/health/diseases/2019-novel-coronavirus-covid-19/covid-19-testing-locations" target="_blank"><strong>Testing Locations</strong></a><br><br>
+				<a href="https://www.co.monterey.ca.us/government/departments-a-h/health/diseases/2019-novel-coronavirus-covid-19/2019-novel-coronavirus-covid-19-vaccines" target="_blank"><strong>Health Department</strong></a><br>
+			</div>
+	</div>
+	<div class="counties hidden" id="sanbenito">
+		<h1>San Benito County</h1>
+		<button class="info_button" id="testing_button_sanbenito"><h2>Testing Sites</h2></button>
+			<div class="info" id="testing_sanbenito">
+				<strong>Veterans Memorial Building</strong><br>
+					649 San Benito St, Hollister, CA 95023<br>
+					Sunday – Thursday: 7:00am – 7:00pm<br>
+					<a href="https://lhi.care/covidtesting" target="_blank">Register Here</a><br>
+					or call (888) 634-1123<br><br>
+				<a href="https://hhsa.cosb.us/wp-content/uploads/2020/12/2020-12-08-Testing-Site-Flyer-for-COVID-19-3.pdf" target="_blank"><strong>Additional Testing Information</strong></a><br><br>
+			</div>
+		<button class="info_button" id="vaccination_button_sanbenito"><h2>Vaccination Resources</h2></button>
+			<div class="info" id="vaccination_sanbenito">
+				<strong>San Benito County Vaccine Interest Form</strong><br>
+					Filling out the form will put you on the contact list for vaccines.<br>
+					It is not scheduling your vaccine appointment.<br>
+					That will come later, as each Phase and Tier becomes eligible.<br>
+					<strong>To complete form, visit: <a href="https://hhsa.cosb.us/vaccine-registration-portal/" target="_blank">here</a></strong><br><br>
+				<a href="https://hhsa.cosb.us/covid-19-vaccine-registration/" target="_blank"><strong>Additional Vaccination Information</strong></a><br><br>
+			</div>
+		<button class="info_button" id="additional_button_sanbenito"><h2>Additional County Resources</h2></button>
+			<div class="info" id="additional_sanbenito">
+				<a href="https://hhsa.cosb.us/public-health/covid-19/" target="_blank"><strong>San Benito County Health & Human Services Agency</strong></a><br><br>
+				<a href="https://hhsa.cosb.us/covid-19-vaccine-info/" target="_blank"><strong>Vaccine Information</strong></a><br><br>
+				<a href="https://covid19.ca.gov/vaccines/#California-vaccines-dashboard" target="_blank"><strong>CA Vaccination Progress Dashboards</strong></a><br><br>
+				<a href="https://hhsa.cosb.us/wp-content/uploads/2020/12/2020-12-08-Testing-Site-Flyer-for-COVID-19-3.pdf" target="_blank"><strong>Testing Information</strong></a><br><br>
+				<a href="https://hhsa.cosb.us/covid-19-in-the-workplace/" target="_blank"><strong>COVID-19 in the Workplace</strong></a><br>
+			</div>
+	</div>
+	<div class="counties hidden" id="sanfrancisco">
+		<h1>San Francisco County</h1>
+		<button class="info_button" id="testing_button_sanfrancisco"><h2>Testing Sites</h2></button>
+			<div class="info" id="testing_sanfrancisco">
+				<strong>Tenderloin Neighborhood Testing Site at GLIDE</strong><br>
+					330 Ellis St, San Francisco, CA<br>
+					Tuesday – Wednesday: 10:00am – 4:00pm<br>
+					Walk-through available in GLIDE parking lot.<br>
+					Registration available in-person on Thursdays and Fridays.<br><br>
+				<strong>Mission Neighborhood Health Center</strong><br>
+					240 Shotwell St, San Francisco, CA<br>
+					Monday – Friday: 8:00am – 5:00pm<br>
+					Call to book test: (415) 552-3870 ext 2217<br><br>
+				<strong>City Bay Urgent Care</strong><br>
+					2131 Irving St, San Francisco, CA<br>
+					Monday – Friday: 9:00am – 9:00pm, Saturday – Sunday: 8:00am – 6:00pm<br>
+					<a href="https://www.citybayurgentcare.com/" target="_blank">Register Here</a><br><br>
+				<strong>Chinese Hospital Testing Site</strong><br>
+					845 Jackson Street, San Francisco, CA<br>
+					Monday – Saturday: 11:30am – 12:30pm<br>
+					Call to book test: (628) 228-2828<br><br>
+				<strong>CVS Minute Clinic</strong><br>
+					377 32nd Ave, San Francisco, CA<br>
+					<a href="http://www.cvs.com/minuteclinic/covid-19-testing" target="_blank">Register Here</a><br><br>
+				<a href="https://datasf.org/covid19-testing-locations/" target="_blank"><strong>Map of Additional Testing Sites</strong></a><br><br>
+			</div>
+		<button class="info_button" id="vaccination_button_sanfrancisco"><h2>Vaccination Resources</h2></button>
+			<div class="info" id="vaccination_sanfrancisco">
+				<strong> San Francisco State University (by Safeway)</strong><br>
+					755 Font Blvd, San Francisco, CA<br>
+					Languages: English<br>
+					Access: Walk-thru, Wheelchair accessible<br>
+					Open to those who meet current eligibility.<br>
+					<strong>Check for availability: <a href="https://mhealthsystem.com/safewaycovidsf" target="_blank">here</a></strong><br><br>
+				<strong>City College of San Francisco</strong><br>
+					55 Frida Kahlo Way, San Francisco, CA<br>
+					Languages: English<br>
+					Access: Walk-thru, Drive-thru, Wheelchair accessible<br>
+					Patients who meet current eligibility.<br>
+					<strong>Check for availability: <a href="https://www.primarybio.com/r/ccsf" target="_blank">here</a></strong><br><br>
+				<strong>Moscone Center South</strong><br>
+					747 Howard Street, San Francisco, CA<br>
+					Languages: English, Spanish, Chinese<br>
+					Access: Walk-thru, Wheelchair accessible<br>
+					Open to those who meet current eligibility.<br>
+					<strong>Check for availability: <a href="https://myturn.ca.gov/" target="_blank">here</a></strong><br><br>
+				<strong>The SF Market in the Bayview</strong><br>
+					901 Rankin Street, San Francisco, CA<br>
+					Languages: English, Spanish, Chinese<br>
+					Access: Walk-thru, Wheelchair accessible<br>
+					Open to those who meet current eligibility.<br>
+					<strong>Check for availability: <a href="http://sutterhealth.org/covid-vaccine" target="_blank">here</a></strong><br><br>
+				<a href="https://sf.gov/vaccine-sites" target="_blank"><strong>Additional Vaccination Information</strong></a><br><br>
+			</div>
+		<button class="info_button" id="additional_button_sanfrancisco"><h2>Additional County Resources</h2></button>
+			<div class="info" id="additional_sanfrancisco">
+				<a href="https://sf.gov/topics/coronavirus-covid-19" target="_blank"><strong>SF.gov Coronavirus (COVID-19)</strong></a><br><br>
+				<a href="https://sf.gov/get-vaccinated-against-covid-19" target="_blank"><strong>Get vaccinated against COVID-19</strong></a><br><br>
+				<a href="https://sf.gov/find-out-about-your-covid-19-testing-options" target="_blank"><strong>Find out about your COVID-19 testing options</strong></a><br><br>
+				<a href="https://www.sfcdcp.org/infectious-diseases-a-to-z/coronavirus-2019-novel-coronavirus/" target="_blank"><strong>Guidance from the Department of Public Health</strong></a><br><br>
+				<a href="https://data.sfgov.org/stories/s/fjki-2fab" target="_blank"><strong>COVID-19 Data and Reports</strong></a><br>
+			</div>
+	</div>
+	<div class="counties hidden" id="sanmateo">
+		<h1>San Mateo County</h1>
+		<button class="info_button" id="testing_button_sanmateo"><h2>Testing Sites</h2></button>
+			<div class="info" id="testing_sanmateo">
+				<strong>College of San Mateo</strong><br>
+					3401 CSM Drive, San Mateo, 94402<br>
+					Sunday – Thursday: 10:00am – 6:00pm<br>
+					<a href="https://lhi.care/covidtesting" target="_blank">Register Here</a><br><br>
+				<strong>The Church of Jesus Christ of Latter-day Saints</strong><br>
+					975 Sneath Lane, San Bruno, 94066<br>
+					Tuesday – Saturday: 9:00am – 5:00pm<br>
+					<a href="https://avellinocov2.com/" target="_blank">Register Here</a><br><br>
+				<strong>Cesar Chavez Ravenswood Middle School</strong><br>
+					2450 Ralmar Avenue, East Palo Alto, 94303<br>
+					Tuesday: 10:00am – 4:00pm<br>
+					<a href="https://cur.tv/CesarChavez" target="_blank">Register Here</a><br><br>
+				<strong>Jefferson Union High School District Administration Offices</strong><br>
+					699 Serramonte Blvd., Daly City, 94015<br>
+					Tuesday – Saturday: 10:00am – 4:00pm<br>
+					<a href="https://curative.com/sites/15090#11.29/37.669/-122.4801" target="_blank">Register Here</a><br><br>
+				<strong>Our Lady of the Pillar Church</strong><br>
+					400 Church Street, Half Moon Bay, 94019<br>
+					Wednesday: 10:00am – 4:00pm<br>
+					<a href="https://curative.com/sites/24979#9/37.4648/-122.431" target="_blank">Register Here</a><br><br>
+				<a href="https://www.smcgov.org/testing" target="_blank"><strong>Additional Testing Sites</strong></a><br><br>
+			</div>
+		<button class="info_button" id="vaccination_button_sanmateo"><h2>Vaccination Resources</h2></button>
+			<div class="info" id="vaccination_sanmateo">
+				<strong>Dignity Health</strong><br>
+					Dignity Health Medical Group – Sequoia<br>
+					Open to established patients who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="https://www.dignityhealth.org/bayarea/medical-group/sequoia" target="_blank">here</a></strong><br><br>
+				<strong>San Mateo Medical Center & Clinics</strong><br>
+					Patients who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="https://www.smchealth.org/post/covid-19-vaccine" target="_blank">here</a></strong><br><br>
+				<strong>CVS</strong><br>
+					Open to those who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="https://www.cvs.com/immunizations/covid-19-vaccine" target="_blank">CVS</a></strong><br><br>
+				<strong>Kaiser Permanente</strong><br>
+					Kaiser members who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="https://kp.org/covidvaccine" target="_blank">here</a></strong><br><br>
+				<strong>Sutter Health</strong><br>
+					Including Palo Alto Medical Foundation<br>
+					Sutter members who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="http://www.sutterhealth.org/covid-vaccine" target="_blank">here</a></strong><br><br>
+				<strong>Stanford Health Care<br></strong>
+					Stanford members who meet current eligibility.<br>
+					<strong>For more information, visit:<br>
+				<a href="https://stanfordhealthcare.org/discover/covid-19-resource-center/patient-care/safety-health-vaccine-planning.html" target="_blank">here</a> or call (650) 498-9000</strong><br><br>
+				<a href="https://www.smchealth.org/covidvaccine" target="_blank"><strong>Additional Vaccination Information</strong></a><br><br>
+			</div>
+		<button class="info_button" id="additional_button_sanmateo"><h2>Additional County Resources</h2></button>
+			<div class="info" id="additional_sanmateo">
+				<a href="https://www.smchealth.org/coronavirus" target="_blank"><strong>SMC Health – Novel Coronavirus (COVID-19)</strong></a><br><br>
+				<a href="https://www.smchealth.org/covidvaccine" target="_blank"><strong>COVID-19 Vaccination Program</strong></a><br><br>
+				<a href="https://www.smchealth.org/covid-19-testing" target="_blank"><strong>COVID-19 Testing in San Mateo County</strong></a><br><br>
+				<a href="https://www.smchealth.org/smc-health-covid-19-plan-metrics" target="_blank"><strong>SMC Health – COVID-19 Plan & Metrics</strong></a><br><br>
+				<a href="https://www.smchealth.org/coronavirus-health-data" target="_blank"><strong>SMC Health Data</strong></a><br>
+			</div>
+	</div>
+	<div class="counties hidden" id="santaclara">
+		<h1>Santa Clara County</h1>
+		<button class="info_button" id="testing_button_santaclara"><h2>Testing Sites</h2></button>
+			<div class="info" id="testing_santaclara">
+				<strong>Gilroy Civic Center</strong><br>
+					7351 Church Street, Gilroy, CA 95020<br>
+					Friday – Thursday: 7:00am – 7:00pm<br>
+					<a href="https://lhi.care/covidtesting" target="_blank">Register Here</a><br><br>
+				<strong>Milpitas Community Center</strong><br>
+					457 E. Calaveras Blvd, Milpitas, CA 95035<br>
+					Thursday – Saturday: 7:00am – 7:00pm<br>
+					<a href="https://lhi.care/covidtesting" target="_blank">Register Here</a>
+					or call (888) 634-1123<br><br>
+				<strong>Bay Area Community Health – Monterey Clinic</strong><br>
+					5504 Monterey Highway, San Jose, CA 95138<br>
+					Monday – Saturday: 9:00am – 11:00am<br>
+					Appointments are preferred, but not required.<br>
+					To schedule an appointment call: (408) 729-9700<br><br>
+				<strong>El Camino Health Los Gatos Hospital</strong><br>
+					815 Pollard Road, Los Gatos, CA 95032<br>
+					First and third Thursdays of the month: 8:30am – 2:30pm<br>
+					<a href="http://www.elcaminohealth.org/COVIDtestLosGatos?utm_source=SCCPH&utm_medium=referral&utm_campaign=covid19" target="_blank">Register Here</a><br><br>
+				<strong>St. Louise Regional Hospital - DePaul Health Center</strong><br>
+					18550 De Paul Dr., Morgan Hill, CA 95037<br>
+					Monday – Friday, 8:30am – 5:00pm<br>
+					To schedule an appointment call: (888) 334-1000<br><br>
+				<a href="https://www.sccgov.org/sites/covid19/Pages/covid19-testing.aspx#bycity" target="_blank"><strong>Additional Testing Sites By City</strong></a><br><br>
+			</div>
+		<button class="info_button" id="vaccination_button_santaclara"><h2>Vaccination Resources</h2></button>
+			<div class="info" id="vaccination_santaclara">
+				<strong>Santa Clara Valley Medical Center Hospitals and Clinics</strong><br>
+					Sites available in San Jose, Gilroy, Santa Clara, and Mountain View.<br>
+					Patients who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="https://vax.sccgov.org/" target="_blank">here</a></strong><br><br>
+				<strong>El Camino Health</strong><br>
+					Patients who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="https://www.elcaminohealth.org/covid-19-resource-center/schedule/vaccine?utm_source=SCCPH&utm_medium=referral&utm_campaign=covid19" target="_blank">here</a></strong><br><br>
+				<strong>Bay Area Community Health<br></strong>
+					Open to those who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="https://bach.health/vaccine" target="_blank">here</a></strong><br><br>
+				<strong>Kaiser Permanente<br></strong>
+					Kaiser members who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="https://mydoctor.kaiserpermanente.org/covid-19/covid-19-vaccine" target="_blank">here</a></strong><br><br>
+				<strong>Palo Alto Medical Foundation (PAMF)<br></strong>
+					Sutter members who meet current eligibility.<br>
+					<strong>For more information, visit: <a href="https://www.sutterhealth.org/pamf/for-patients/health-alerts/covid-19-vaccine" target="_blank">here</a></strong><br><br>
+				<strong>Stanford Health Care<br></strong>
+					Stanford members who meet current eligibility.<br>
+					<strong>For more information, visit:<br>
+				<a href="https://stanfordhealthcare.org/discover/covid-19-resource-center/patient-care/safety-health-vaccine-planning.html" target="_blank">here</a> or call (610) 498-9000</strong><br><br>
+				<a href="https://www.sccgov.org/sites/covid19/Pages/COVID19-vaccine-information-for-public.aspx#appointment" target="_blank"><strong>Additional Vaccination Sites</strong></a><br><br>
+			</div>
+		<button class="info_button" id="additional_button_santaclara"><h2>Additional County Resources</h2></button>
+			<div class="info" id="additional_santaclara">
+				<a href="https://www.sccgov.org/sites/covid19/Pages/home.aspx" target="_blank"><strong>Santa Clara County Public Health</strong></a><br><br>
+				<a href="https://www.sccgov.org/sites/covid19/Pages/COVID19-vaccine-information-for-public.aspx" target="_blank"><strong>Vaccine Information</strong></a><br><br>
+				<a href="https://www.sccgov.org/sites/covid19/Pages/covid19-testing.aspx" target="_blank"><strong>Testing Sites</strong></a><br><br>
+				<a href="https://www.sccgov.org/sites/covid19/Pages/numbers-directory.aspx" target="_blank"><strong>Resource Directory </strong></a><br><br>
+				<a href="https://www.sccgov.org/sites/covid19/Pages/social-media-resources.aspx" target="_blank"><strong>Important Messages</strong></a><br>
+			</div>
+	</div>
+	<div class="counties hidden" id="santacruz">
+		<h1>Santa Cruz County</h1>
+		<button class="info_button" id="testing_button_santacruz"><h2>Testing Sites</h2></button>
+			<div class="info" id="testing_santacruz">
+				<strong>UCSC Cowell Student Health Center</strong><br>
+					1156 High Street, Santa Cruz, CA 95064<br>
+					Monday – Friday: 8:00am – 5:00pm<br>
+					Call (831) 459-2500<br><br>
+				<strong>Santa Cruz Community Health Centers</strong><br>
+					21507 E Cliff Drive, Santa Cruz, CA 95062<br>
+					Monday – Thursday: 8:00am – 8:00pm and Friday 8:00am – 4:00pm<br>
+					Call (831) 427-3500<br><br>
+				<strong>Cabrillo College Student Health Center</strong><br>
+					6500 Soquel Drive, Aptos CA 95003<br>
+					Monday – Thursday: 9:00am – 3:00pm<br>
+					Call (831) 479-6435<br><br>
+				<strong>County Health Center-Watsonville</strong><br>
+					1430 Freedom Blvd, Suite D, Watsonville, CA 95076<br>
+					Monday – Thursday: 8:00am – 5:30pm and Friday 8:00am – 4:30pm<br>
+					Call (831) 763-8400<br><br>
+				<strong>Salud Para La Gente</strong><br>
+					204 East Beach Street, Watsonville, CA 95076<br>
+					Monday – Saturday, 8:30am – 5:30pm and Sunday 8:30am – 12:30pm<br>
+					Call (831) 728-0222<br><br>
+				<a href="http://www.santacruzhealth.org/HSAHome/HSADivisions/PublicHealth/CommunicableDiseaseControl/CoronavirusHome/SAVELivesSantaCruzCounty/GetTested.aspx" target="_blank"><strong>Additional Testing Sites</strong></a><br><br>
+			</div>
+		<button class="info_button" id="vaccination_button_santacruz"><h2>Vaccination Resources</h2></button>
+			<div class="info" id="vaccination_santacruz">
+				<strong>Salud Para La Gente</strong><br>
+					Open to those who meet current eligibility.<br>
+					<strong>Call 831) 728-0222 to schedule an appointment.</strong><br><br>
+				<strong>Santa Cruz Community Health (SCCH)</strong><br>
+					Open to those who meet current eligibility.<br>
+					<strong>Call (831) 427-3500 ext 324 to schedule an appointment.</strong><br><br>
+				<strong>CVS and Rite Aid<br></strong>
+					Open to those who meet current eligibility.<br>
+					<strong>For more information, visit:<br>
+					<a href="https://www.cvs.com/immunizations/covid-19-vaccine" target="_blank">CVS</a> and/or <a href="https://www.riteaid.com/pharmacy/covid-qualifier" target="_blank">Rite Aid</a></strong><br><br>
+				<strong>Kaiser Permanente<br></strong>
+					Kaiser members who meet current eligibility.<br>
+					<strong>For more information, visit: <br>
+					<a href="https://mydoctor.kaiserpermanente.org/covid-19/covid-19-vaccine" target="_blank">here</a> or call (866) 454-8855</strong><br><br>
+				<strong>Sutter Health/Palo Alto Medical Foundation (PAMF)<br></strong>
+					Sutter members who meet current eligibility.<br>
+					<strong>For more information, visit:<br>
+					<a href="http://www.sutterhealth.org/covid-vaccine" target="_blank">here</a> or call (844) 987-6115</strong><br><br>
+				<strong>Dignity Health Medical Group – Dominican<br></strong>
+					Dignity Health members who meet current eligibility.<br>
+					<strong>For more information, visit:<br>
+				<a href="http://www.dhmf.org/dominican" target="_blank">here</a> or call (831) 288-6526</strong><br><br>
+				<a href="http://www.santacruzhealth.org/HSAHome/HSADivisions/PublicHealth/CommunicableDiseaseControl/CoronavirusHome/Vaccine.aspx" target="_blank"><strong>Additional Vaccination Information</strong></a><br><br>
+			</div>
+		<button class="info_button" id="additional_button_santacruz"><h2>Additional County Resources</h2></button>
+			<div class="info" id="additional_santacruz">
+				<a href="http://www.santacruzhealth.org/HSAHome/HSADivisions/PublicHealth/CommunicableDiseaseControl/CoronavirusHome.aspx" target="_blank"><strong>Health Services Agency</strong></a><br><br>
+				<a href="http://www.santacruzhealth.org/HSAHome/HSADivisions/PublicHealth/CommunicableDiseaseControl/CoronavirusHome/PublicInformation.aspx" target="_blank"><strong>Public Information</strong></a><br><br>
+				<a href="http://www.santacruzhealth.org/HSAHome/HSADivisions/PublicHealth/CommunicableDiseaseControl/CoronavirusHome/Vaccine.aspx" target="_blank"><strong>Vaccine</strong></a><br><br>
+				<a href="http://www.santacruzhealth.org/HSAHome/HSADivisions/PublicHealth/CommunicableDiseaseControl/CoronavirusHome/SAVELivesSantaCruzCounty/GetTested.aspx" target="_blank"><strong>Get Tested</strong></a><br><br>
+				<a href="https://covid19.ca.gov/stay-home-except-for-essential-needs/" target="_blank"><strong>About COVID-19 restrictions</strong></a><br>
+			</div>
+	</div>
+</body>
+</html>
